@@ -1,1 +1,13 @@
-<p>projects works!</p>
+
+<section  id="proyectos" class="grid md:grid-cols-3 gap-6 p-4">
+  @for (project of projects; track project.title) {
+    <component-project-card
+      [title]="project.title"
+      [description]="project.description"
+      [imageUrl]="project.imageUrl"
+      [techStack]="project.techStack"
+      [link]="project.link"
+      [github]="project.github"
+    />
+  }
+</section>

@@ -1,0 +1,21 @@
+<div class="p-4 border rounded shadow bg-white">
+  <img [src]="imageUrl" [alt]="title" class="mb-2 w-full h-48 object-cover rounded" />
+  <h3 class="font-extrabold uppercase text-5xl tracking-tight leading-tight break-words">{{ title }}</h3>
+  <p class="text-gray-600 mb-2">{{ description }}</p>
+  <ul class="flex flex-wrap gap-2 text-sm text-indigo-600">
+    @for (tech of techStack; track tech) {
+      <li [class]="'px-2 py-1 rounded text-gray-700  uppercase ' + getTechClass(tech)">{{ tech }}</li>
+    }
+  </ul>
+  <a [href]="link" target="_blank" class="mt-3 block text-indigo-700 hover:underline">Ver proyecto</a>
+  <a [href]="github" target="_blank" class="mt-2 block text-indigo-700 hover:underline inline-flex items-center gap-1">
+    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill-rule="evenodd"
+        d="M12 0C5.372 0 0 5.373 0 12a12 12 0 008.205 11.385c.6.113.82-.258.82-.577v-2.233c-3.338.727-4.033-1.61-4.033-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.089-.745.082-.729.082-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.809 1.304 3.494.997.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.334-5.466-5.933 0-1.31.467-2.382 1.235-3.22-.124-.305-.535-1.536.117-3.204 0 0 1.008-.322 3.3 1.23a11.516 11.516 0 016.003 0c2.29-1.552 3.296-1.23 3.296-1.23.653 1.668.243 2.899.12 3.204.77.838 1.233 1.91 1.233 3.22 0 4.61-2.805 5.624-5.475 5.922.43.37.813 1.1.813 2.218v3.293c0 .322.218.694.825.576A12.003 12.003 0 0024 12c0-6.627-5.373-12-12-12z"
+        clip-rule="evenodd"
+      />
+    </svg>
+    Ver código del proyecto
+  </a>
+</div>

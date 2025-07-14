@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './home.html',
   styleUrl: './home.css',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class Home{
 
