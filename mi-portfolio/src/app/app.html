@@ -6,7 +6,7 @@
       </a>
     </div>
 
-    <!-- Botón hamburguesa visible solo en móviles -->
+    <!-- Botón hamburguesa en móviles -->
     <button
       class="md:hidden text-gray-800"
       (click)="toggleMenu()"
@@ -58,7 +58,7 @@
       (click)="closeMenu()"
       class="px-2 py-1 text-xl text-gray-700 hover:text-gray-600 transition"
       >
-      Skills
+      Habilidades
     </a>
 
     <a routerLink="/contacto"
@@ -73,49 +73,50 @@
 </nav>
 
 <div class="animated-background">
-  <main class="p-6 max-w-7xl mx-auto min-h-screen ">
+  <main class="p-6 max-w-screen-2xl mx-auto min-h-screen">
     <router-outlet></router-outlet>
   </main>
 </div>
 <!-- Footer Principal -->
-<footer class="text-gray-800">
+<footer class="text-gray-800 border">
+  <div class="bg-violet-200 p-10 text-left">
+    <div class="grid md:grid-cols-3 gap-9 items-center">
 
-  <!-- Bloque de contacto y redes -->
-  <div class="bg-violet-200	 p-8 text-center md:text-left">
-    <div class="grid md:grid-cols-4 gap-4">
       <div>
-        <h3 class="font-bold mb-2">Madrid</h3>
-        <p>madrid.es<br>Rodríguez San Pedro, 2<br>+34 91 292 26 13</p>
-        <p class="mt-2 font-bold">Whatsapp: +34 692 253 576</p>
+        <h3 class="font-bold mb-2">Ubicación</h3>
+        <p>
+          Jaén, España<br>
+          Calle Ejemplo, 123<br>
+          +34 600 123 456
+        </p>
       </div>
+
       <div class="flex flex-col justify-center gap-1">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Linkedin</a>
-        <a href="#">Youtube</a>
-        <a href="#">Tiktok</a>
+        <h3 class="font-bold mb-2">Contacto</h3>
+        <a href="https://github.com/MercheME" target="_blank" class="hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/mercedes-moreno-bb16ab1b4/" target="_blank" class="hover:underline">LinkedIn</a>
+        <a href="https://t.me/mrchmx" target="_blank" class="hover:underline">Telegram</a>
       </div>
+
       <div>
-        <h3 class="font-bold mb-2">Entidades colaboradoras</h3>
-        <!-- logos -->
+        <h3 class="font-bold mb-2">Tecnologías favoritas</h3>
+        <ul class="list-disc list-inside text-sm text-gray-700">
+          <li>Angular</li>
+          <li>React</li>
+          <li>Laravel</li>
+          <li>Tailwind CSS</li>
+        </ul>
       </div>
-      <div>
-        <h3 class="font-bold mb-2">Suscríbete a nuestra newsletter</h3>
-        <input type="email" placeholder="Email" class="border-b w-full p-1 bg-transparent focus:outline-none">
-        <label class="block mt-2">
-          <input type="checkbox" class="mr-2">
-          Acepto los términos y condiciones
-        </label>
-        <button class="mt-2 text-right text-sm text-gray-700 font-semibold">Enviar</button>
-      </div>
+
     </div>
   </div>
 
   <!-- Bloque inferior -->
   <div class="bg-rose-200 py-4 text-center text-sm border-t border-gray-500">
-    <p>1991 - 2025 CEI ® | TODOS LOS DERECHOS RESERVADOS | TÉRMINOS LEGALES</p>
-    <p class="mt-2 max-w-4xl mx-auto">
-      Omnes Education es una institución privada de educación superior [...] panorama educativo internacional.
+    <p>© 2025 Merche Moreno | Todos los derechos reservados</p>
+    <p class="mt-2 max-w-4xl mx-auto px-4">
+      Este sitio ha sido diseñado y desarrollado por mí con enfoque en accesibilidad, rendimiento y diseño responsive.
     </p>
   </div>
+
 </footer>
