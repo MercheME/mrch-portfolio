@@ -33,5 +33,19 @@ export class Projects {
       techStack: ['Angular', 'Typescript', 'Angular Material', 'Node'],
       github:'https://github.com/MercheME/fitoterapiaAppAngular'
     },
+    {
+      title: 'Rastreador de Productos',
+      description: 'Aplicación para hacer webscraping en productos de Amazon y Aliexpres, los productos se guardan en la caché de objetos y pueden guardarse como favoritos además puedes eliminar todos los productos favoritos.',
+      imageUrl: 'images/webscrapping.png',
+      techStack: ['JavaScript'],
+      github:'https://github.com/MercheME/webScraping'
+    },
+    {
+      title: 'Mi Biblioteca',
+      description: 'Una aplicación web para registrar y gestionar tus libros leídos, pendientes y favoritos. Dispones también de estadísticas las cuales tienen gráficos aplicando la librería de Chart.js ',
+      imageUrl: 'images/laravel-biblioiteca.png',
+      techStack: ['JavaScript', 'php', 'Laravel', 'tailwindcss'],
+      github:'https://github.com/MercheME/Laravel-Biblioteca'
+    },
   ];
 }
