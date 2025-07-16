@@ -5,10 +5,8 @@ Este es mi portfolio personal desarrollado con **Angular** y **TailwindCSS**, do
 
 ## 🚀 Tecnologías usadas
 
-- 🎨 [Figma](https://figma.com)
 - 🌐 [Angular](https://angular.io/)
 - 💅 [TailwindCSS](https://tailwindcss.com/)
-- 🧠 [PHP](https://www.php.net/) / [Laravel](https://laravel.com/) (en proyectos backend)
 
 ---
 
