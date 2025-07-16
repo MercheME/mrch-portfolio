@@ -7,11 +7,8 @@ Este es mi portfolio personal desarrollado con **Angular** y **TailwindCSS**, do
 
 - 🎨 [Figma](https://figma.com)
 - 🌐 [Angular](https://angular.io/)
-- 🌐 [React](https://es.react.dev/)
 - 💅 [TailwindCSS](https://tailwindcss.com/)
-- ⚙️ [TypeScript](https://www.typescriptlang.org/)
 - 🧠 [PHP](https://www.php.net/) / [Laravel](https://laravel.com/) (en proyectos backend)
-- 🔍 [Java](https://www.java.com/es/)
 
 ---
 
